@@ -1,5 +1,5 @@
 # @tool-developer/deeplink
-该方案为整合解决方案，支持微信标签方式，Universal link，Scheme URL，itunes URL等集中方式。
+该方案为整合解决方案，支持微信标签方式，Universal link，Scheme URL，itunes URL等方式。
 
 
 
