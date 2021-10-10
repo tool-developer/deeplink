@@ -1,6 +1,6 @@
 {
   "name": "@tool-developer/deeplink",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "deep links to mobile apps",
   "main": "dist/index.js",
   "module": "esm/index.js",

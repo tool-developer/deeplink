@@ -311,7 +311,6 @@ export default (props)=>{
 
   //
   const os = new UserAgent(navigator.userAgent);
-  console.log(os)
 
   const currentDeepLinkJumpQuery = query('deepLinkJumpQuery');
   //

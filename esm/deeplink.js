@@ -1043,7 +1043,6 @@ var deeplink = (function (props) {
       handleCurrentUrl = props.handleCurrentUrl; //
 
   var os = new UserAgent(navigator.userAgent);
-  console.log(os);
   var currentDeepLinkJumpQuery = query('deepLinkJumpQuery'); //
 
   var currentItunesURL = (os.ipad ? ipadItunesURL : iphoneItunesURL) || itunesURL;

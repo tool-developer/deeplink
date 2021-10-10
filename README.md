@@ -9,10 +9,16 @@
 ```
 import {DeepLink,setUniversalJumpLinks} from '@tool-developer/deeplink'
 //
+setUniversalJumpLinks([
+  //
+])
+// ...
 const el = DeepLink({
 
 })
 //...
+
+
 ```
 
 1.微信标签方式
