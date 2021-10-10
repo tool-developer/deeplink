@@ -1,16 +1,16 @@
-import {WxOpenLaunch,setUniversalJumpLinks} from '../../esm/index.js';
+import {DeepLink,setUniversalJumpLinks} from '../../esm/index.js';
 
 //
 setUniversalJumpLinks([
-  'jump0.toolne.com',
-  'jump1.toolne.com',
-  'jump2.toolne.com',
-  'jump3.toolne.com',
-  'jump4.toolne.com'
+  'jump0.xxxx.com',
+  'jump1.xxxx.com',
+  'jump2.xxxx.com',
+  'jump3.xxxx.com',
+  'jump4.xxxx.com'
 ])
 
 //
-const el = WxOpenLaunch({
+const el = DeepLink({
   //el:document.querySelector('#wp'),
   //supportLaunch:'universal',
   text:'点击',
