@@ -139,10 +139,13 @@ const iShowTipsView = ()=>{
 }
 //
 const LaunchButton = (props)=>{
-  const {text,el,url,onClick,os,showTipsView,isUniversal,launchButtonView = {}} = props;
+  const {el,url,os,showTipsView,isUniversal,launchButtonView = {}} = props;
   const cls = launchButtonView.cls || defaultLaunchButtonView.cls;
   const style = {...defaultLaunchButtonView.style,...(launchButtonView.style || {})};
-  const $btn = $$('div').text(text || '打开');
+  const text = launchButtonView.text || props.text || '打开';
+  const onClick = launchButtonView.onClick || props.onClick;
+  //
+  const $btn = $$('div').text(text);
   //
   if(cls){
     $btn.attr('class',cls)

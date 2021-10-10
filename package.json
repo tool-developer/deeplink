@@ -2,7 +2,8 @@
   "name": "@tool-developer/deeplink",
   "version": "0.0.1",
   "description": "deep links to mobile apps",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
   "scripts": {
     "test": "jest",
     "clean": "scripts/clean_package.sh",

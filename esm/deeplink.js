@@ -852,10 +852,8 @@ var iShowTipsView = function iShowTipsView() {
 
 
 var LaunchButton = function LaunchButton(props) {
-  var text = props.text,
-      el = props.el,
+  var el = props.el,
       url = props.url,
-      onClick = props.onClick,
       os = props.os,
       showTipsView = props.showTipsView,
       isUniversal = props.isUniversal,
@@ -865,7 +863,10 @@ var LaunchButton = function LaunchButton(props) {
 
   var style = _objectSpread(_objectSpread({}, defaultLaunchButtonView.style), launchButtonView.style || {});
 
-  var $btn = $$('div').text(text || '打开'); //
+  var text = launchButtonView.text || props.text || '打开';
+  var onClick = launchButtonView.onClick || props.onClick; //
+
+  var $btn = $$('div').text(text); //
 
   if (cls) {
     $btn.attr('class', cls);
